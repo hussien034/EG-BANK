@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EG-Bank</title>
+    <link rel="icon" type="image/" href="/images/En_logo_EGB_.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/simple-sidebar.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper">
+        <ul class="sidebar-nav nav nav-tabs d-block" id="sidebar-nav">
+          <li class="sidebar-brand">
+            <a href="#dashboard"> <img src="images/En_logo_EGB_.png"></a>
+          </li>
+          <li>
+            <a href="#tab1">Debit Cards</a>
+          </li>
+          <li>
+            <a href="#tab2">Classic Cards</a>
+          </li>
+          <li>
+            <a href="#tab3">Titanium Cards</a>
+          </li>
+          <li>
+            <a href="#tab4">Platinum Cards</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /#sidebar-wrapper -->
+
+      <!-- Page Content -->
+      <div class="tab-content">
+        <div class="tab-pane active" id="dashboard">
+          <div class="container-fluid main">
+            <div class="row">
+              <div class="col-lg-12">
+                <a href="#menu-toggle" class="btn  mt-4" id="menu-toggle"
+                  ><img src="images/En_logo_EGB_.png"></a
+                >
+            </div>
+            <div class="col-md-12 ">
+                <div class="row auto ">
+                    <div class="col-md-8 text-center">
+                         <h1>Online Banking</h1>
+                    </div>
+                </div>
+                   <div class="row head">
+                    <div class="col-md-12 d-flex align-items-center p-5 adjust">
+                        <h1>ENJOY THE BEST OFFERS AND DISCOUNTS WHEN YOU USE EGBANK CARDS IN YOUR DAILY TRANSACTIONS</h1>
+                        <img src="images/8069130.jpg" class="w-50">
+                    </div>
+                   </div>
+                   <div class="row d-flex justify-content-center p-2 mt-3 debit p-5">
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-12 d-flex justify-content-center">
+                                 <img src="images/Mezzacard.png">
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-12  d-flex justify-content-center">
+                                <button class="apply" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Apply Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 criedit mt-1">
+                        <h2>Meeza Debit Card
+                        </h2>
+                        <p>Benefits </p>
+                        <ul>
+                            <li>Alternative safe and convenient cash tool
+                            </li>
+                            <li>
+                                Access to your banking accounts 24/7
+                            </li>
+                            <li>
+                                Daily Cash withdrawal from any EGBANK ATM or any other ATM locally up to EGP 20K
+                            </li>
+                            <li>
+                                Instant SMS notification upon using the card in cash and purchase transactions around the world
+                            </li>
+                            <li>
+                                * Terms & Conditions apply
+                            </li>
+                        </ul>
+  <!-- Modal  Credit Card-->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="staticBackdropLabel">APPLY NOW</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="debitForm" class="form1">
+          <label>Full Name</label>
+          <input type="text" placeholder="Full Name" class="form-control input1" id="name-debit" required>
+          <label>Email</label>
+          <input type="email" placeholder="E-mail" class="form-control input1" id="email-debit" required>
+          <label>Mobile Number</label>
+          <input type="number" placeholder="mobile number" class="form-control input1 " id="number-debit" required>
+          <label>National ID</label>
+          <input type="number" placeholder="ID Number" class="form-control input1" id="id-debit" required>
+          <label>Date of Birth</label>
+          <input type="date" placeholder="DD/MM/YYYY" class="form-control input1" id="date-debit" required>
+          <label>Category</label>
+          <input disabled type="text" value="Debit Card" placeholder="Debit Card" class="form-control input1" id="category-debit" required>
+          <label>Monthly Income</label>
+          <input type="number"  placeholder="Income" class="form-control input1" id="income-debit" required>
+          <img src="images/Heritage_Illustration_blue.png" class="w-100" >
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button  id="save-data" disabled="disabled" type="button" onclick="saveDebitData()"  data-bs-dismiss="modal" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                    </div>
+                   </div>
+                   <div class="row d-flex justify-content-center p-2 mt-3 Classic p-5">
+                    <div class="col-md-4">
+                        <div class="row mt-3">
+                            <div class="col-md-12 d-flex justify-content-center">
+                                 <img src="images/EgyptianGulfBankMCClassicDebitPayPass.jpg">
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-12  d-flex justify-content-center">
+                                <button class="apply" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Apply Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 criedit mt-1">
+                        <h2>Classic Debit Card
+                        </h2>
+                        <p>The perfect card for your lifestyle
+                        </p>
+                        <p>Benefits </p>
+                        <ul>
+                            <li>Alternative safe and convenient cash tool
+
+                            </li>
+                            <li>
+                                Access to your banking accounts 24/7
+                            </li>
+                            <li>
+                                Daily Cash withdrawal from any EGBANK ATM or any other ATM locally up to EGP 20K
+                            </li>
+                            <li>
+                              More than 20,000 merchants locally and 24 million merchants worldwide for all purchases and payments
+                            </li>
+                            <li>
+                              Instant SMS notification upon using the card in cash and purchase transactions around the world
+                            </li>
+                            <li>
+                                * Terms & Conditions apply
+                            </li>
+                        </ul>
+  <!-- Modal  Classic Credit Card-->
+  <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="staticBackdropLabel">APPLY NOW</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="debitForm" class="form2">
+          <label>Full Name</label>
+          <input type="text" placeholder="Full Name" class="form-control input2" id="name-classic" required>
+          <label>Email</label>
+          <input type="email" placeholder="E-mail" class="form-control input2" id="email-classic" required>
+          <label>Mobile Number</label>
+          <input type="number" placeholder="mobile number" class="form-control input2 " id="number-classic" required>
+          <label>National ID</label>
+          <input type="number" placeholder="ID Number" class="form-control input2" id="id-classic" required>
+          <label>Date of Birth</label>
+          <input type="date" placeholder="DD/MM/YYYY" class="form-control input2" id="date-classic" required>
+          <label>Category</label>
+          <input disabled type="text" value="Classic Card" placeholder="Debit Card" class="form-control input2" id="category-classic" required>
+          <label>Monthly Income</label>
+          <input type="number"  placeholder="Income" class="form-control input2" id="income-classic" required>
+          <img src="images/Heritage_Illustration_blue.png" class="w-100" >
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button  id="save-Claassicdata" disabled="disabled" type="button" onclick="saveClassicData()"  data-bs-dismiss="modal" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                    </div>
+                   </div>
+                   <div class="row d-flex justify-content-center p-2 mt-3 Titanium   p-5">
+                    <div class="col-md-4">
+                        <div class="row mt-3">
+                            <div class="col-md-12 d-flex justify-content-center">
+                                 <img src="images/EgyptianGulfBankMCTitaniumDebitContactless.jpg">
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-12  d-flex justify-content-center">
+                                <button class="apply" data-bs-toggle="modal" data-bs-target="#staticBackdrop3">Apply Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 criedit mt-1">
+                        <h2>Titanium Debit Card
+                        </h2>
+                        <p>The perfect card for your lifestyle
+                        </p>
+                        <p>Benefits </p>
+                        <ul>
+                            <li>Alternative safe and convenient cash tool
+
+                            </li>
+                            <li>
+                                Access to your banking accounts 24/7
+                            </li>
+                            <li>
+                                Daily Cash withdrawal from any EGBANK ATM or any other ATM locally up to EGP 20K
+                            </li>
+                            <li>
+                              More than 20,000 merchants locally and 24 million merchants worldwide for all purchases and payments
+                            </li>
+                            <li>
+                              Instant SMS notification upon using the card in cash and purchase transactions around the world
+                            </li>
+                            <li>Complimentary offers throughout Middle East & Africa across dining, cafes, entertainment and attractions through MasterCard application Buy 1 Get 1</li>
+                            <li>
+                              Complimentary access to over 10 VIP lounges in the Middle East and Levant.
+                            </li>
+                            <li>
+                              Enjoy EGBANK’s discounts at a large number of selected merchants.
+                            </li>
+                            <li>
+                                * Terms & Conditions apply
+                            </li>
+                        </ul>
+  <!-- Modal  Classic Credit Card-->
+  <div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="staticBackdropLabel">APPLY NOW</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="debitForm" class="form3">
+          <label>Full Name</label>
+          <input type="text" placeholder="Full Name" class="form-control input3" id="name-titanium" required>
+          <label>Email</label>
+          <input type="email" placeholder="E-mail" class="form-control input3" id="email-titanium" required>
+          <label>Mobile Number</label>
+          <input type="number" placeholder="mobile number" class="form-control input3 " id="number-titanium" required>
+          <label>National ID</label>
+          <input type="number" placeholder="ID Number" class="form-control input3" id="id-titanium" required>
+          <label>Date of Birth</label>
+          <input type="date" placeholder="DD/MM/YYYY" class="form-control input3" id="date-titanium" required>
+          <label>Category</label>
+          <input disabled type="text" value="Titanium Card" placeholder="Debit Card" class="form-control input3" id="category-titanium" required>
+          <label>Monthly Income</label>
+          <input type="number"  placeholder="Income" class="form-control input3" id="income-titanium" required>
+          <img src="images/Heritage_Illustration_blue.png" class="w-100" >
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button  id="save-titaniumdata" disabled="disabled" type="button" onclick="saveTitaniumData()"  data-bs-dismiss="modal" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                    </div>
+                   </div>
+                   <div class="row d-flex justify-content-center p-2 mt-3 Platinum  p-5">
+                    <div class="col-md-4">
+                        <div class="row mt-3">
+                            <div class="col-md-12 d-flex justify-content-center">
+                                 <img src="images/EgyptianGulfBankMCPlatinumDebitContactless.jpg">
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-12  d-flex justify-content-center">
+                                <button class="apply" data-bs-toggle="modal" data-bs-target="#staticBackdrop4">Apply Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 criedit mt-1">
+                        <h2>Platinum Debit Card
+                        </h2>
+                        <p class="pSpecial">The perfect card for your lifestyle
+                        </p>
+                        <p class="pSpecial">Benefits </p>
+                        <ul>
+                            <li>Alternative safe and convenient cash tool
+
+                            </li>
+                            <li>
+                                Access to your banking accounts 24/7
+                            </li>
+                            <li>
+                                Daily Cash withdrawal from any EGBANK ATM or any other ATM locally up to EGP 20K
+                            </li>
+                            <li>
+                              More than 20,000 merchants locally and 24 million merchants worldwide for all purchases and payments
+                            </li>
+                            <li>
+                              Instant SMS notification upon using the card in cash and purchase transactions around the world
+                            </li>
+                            <li>Complimentary offers throughout Middle East & Africa across dining, cafes, entertainment and attractions through MasterCard application Buy 1 Get 1</li>
+                            <li>
+                              Complimentary access to over 10 VIP lounges in the Middle East and Levant.
+                            </li>
+                            <li>
+                              Get free membership and various discounts on shipping with MyUS when buying across thousands of U.S. online stores.
+                            </li>
+                            <li>
+                              Up to 15% discount on your next car rental when you book with Avis.
+                            </li>
+                            <li>
+                              Top of the line offers at 9 shopping villages in Europe such as VIP invitations, discounts on shopping packages and chauffeur drives, and access to VIP lounges.
+                            </li>
+                            <li>
+                              Download “MasterCard For You” and “MasterCard Buy 1 Get 1” Applications on your smart phone to learn more.
+                            </li>
+                            <li>
+                              Enjoy EGBANK’s discounts at a large number of selected merchants
+                            </li>
+                            <li>
+                                * Terms & Conditions apply
+                            </li>
+                        </ul>
+  <!-- Modal  Classic Credit Card-->
+  <div class="modal fade" id="staticBackdrop4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="staticBackdropLabel">APPLY NOW</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="debitForm" class="form4">
+          <label>Full Name</label>
+          <input type="text" placeholder="Full Name" class="form-control input4" id="name-platinum" required>
+          <label>Email</label>
+          <input type="email" placeholder="E-mail" class="form-control input4" id="email-platinum" required>
+          <label>Mobile Number</label>
+          <input type="number" placeholder="mobile number" class="form-control input4 " id="number-platinum" required>
+          <label>National ID</label>
+          <input type="number" placeholder="ID Number" class="form-control input4" id="id-platinum" required>
+          <label>Date of Birth</label>
+          <input type="date" placeholder="DD/MM/YYYY" class="form-control input4" id="date-platinum" required>
+          <label>Category</label>
+          <input disabled type="text" value="Platinum Card" placeholder="Debit Card" class="form-control input4" id="category-platinum" required>
+          <label>Monthly Income</label>
+          <input type="number"  placeholder="Income" class="form-control input4" id="income-platinum" required>
+          <img src="images/Heritage_Illustration_blue.png" class="w-100" >
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button  id="save-platinumdata" disabled="disabled" type="button" onclick=" saveplatinumData()"  data-bs-dismiss="modal" class="btn btn-primary">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                    </div>
+                    
+                   </div>
+                   <div class="row g-3 d-flex justify-content-center p-2  Classic  p-5">
+                    <div class="col-md">
+                      <img src="images/En_footer_Logo.png">
+                      <li>©2017 EGBANK - All rights reserved
+
+                        "Terms & Conditions Apply"</li>
+                        <li>Data enclosed on the website is subject to change upon the bank discretion where such changes will be considered effective until updated on the website</li>
+                        <li>B 23.3.8.2 23
+
+                        </li>
+                    </div>
+                    <div class="col-md">
+                      <h4>Head Offices
+                      </h4>
+                      <li>El Orman Plaza Building
+                        8, 10 Ahmed Nessim St., Giza
+                        P.O.Box: 56 El-Orman</li>
+                        <li>The Address:
+                          45B, The Address Building, North Teseen st.,</li>
+                        <li>131:
+                          Building 131, North Teseen st,
+                        </li>
+                    </div>
+                   </div>
+                <div class="jquery-script-ads">
+                  <script type="text/javascript"></script>
+                  <script
+                    type="text/javascript"
+                    src="http://pagead2.googlesyndication.com/pagead/show_ads.js"
+                  ></script>
+               
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="tab2">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 mt-5 text-center">
+                <h1>Data Of Classic Cards</h1>
+                <br>
+                <input class="form-control" type="text" onkeyup="search(this.value)" placeholder="Search by Name">
+                <table  class="table table-dark table-hover mt-4">
+                  <thead>
+                     <tr>
+                      <td>Full Name</td>
+                      <td>Email</td>
+                      <td>Mobile Number</td>
+                      <td>National ID</td>
+                      <td>Date of Birth</td>
+                      <td>Category</td>
+                      <td>Montly Income</td>
+                      <td>Delete</td>
+                     </tr>
+                  </thead>
+                  <tbody id="table2">
+                      
+                  </tbody>
+                      </table>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="tab3">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 mt-5 text-center">
+                <h1>Data Of Titanium Cards</h1>
+                <br>
+                <input class="form-control" type="text" onkeyup="searchTitanium(this.value)" placeholder="Search by Name">
+                <table  class="table table-dark table-hover mt-4">
+                  <thead>
+                     <tr>
+                      <td>Full Name</td>
+                      <td>Email</td>
+                      <td>Mobile Number</td>
+                      <td>National ID</td>
+                      <td>Date of Birth</td>
+                      <td>Category</td>
+                      <td>Montly Income</td>
+                      <td>Delete</td>
+                     </tr>
+                  </thead>
+                  <tbody id="table3">
+                      
+                  </tbody>
+                      </table>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="tab4">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12 mt-5 text-center">
+                <h1>Data Of Platinum  Cards</h1>
+                <br>
+                <input class="form-control" type="text" onkeyup="searchPlatinum(this.value)" placeholder="Search by Name">
+                <table  class="table table-dark table-hover mt-4">
+                  <thead>
+                     <tr>
+                      <td>Full Name</td>
+                      <td>Email</td>
+                      <td>Mobile Number</td>
+                      <td>National ID</td>
+                      <td>Date of Birth</td>
+                      <td>Category</td>
+                      <td>Montly Income</td>
+                      <td>Delete</td>
+                     </tr>
+                  </thead>
+                  <tbody id="table4">
+                      
+                  </tbody>
+                      </table>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane" id="tab1">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 mt-5 text-center">
+                <h1>Data Of Debit Cards</h1>
+                <br>
+                <input class="form-control" type="text" onkeyup="searchDebit(this.value)" placeholder="Search by Name">
+                <table  class="table table-dark table-hover mt-4">
+                    <thead>
+                       <tr>
+                        <td>Full Name</td>
+                        <td>Email</td>
+                        <td>Mobile Number</td>
+                        <td>National ID</td>
+                        <td>Date of Birth</td>
+                        <td>Category</td>
+                        <td>Montly Income</td>
+                        <td>Delete</td>
+                       </tr>
+                    </thead>
+                    <tbody id="table">
+                        
+                    </tbody>
+                        </table>
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/popper.min.js"></script>
+    <script src="js/main.js"></script>
+    
+  </body>
+</html>
